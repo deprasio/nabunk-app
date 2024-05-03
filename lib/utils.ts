@@ -64,11 +64,11 @@ export const formatDateTime = (dateString: Date) => {
     timeOnly: formattedTime,
   };
 };
-
+// down below i change the number format id-ID from "en-US" and the currency from "USD" to "IDR"
 export function formatAmount(amount: number): string {
-  const formatter = new Intl.NumberFormat("en-US", {
+  const formatter = new Intl.NumberFormat("id-ID", {
     style: "currency",
-    currency: "USD",
+    currency: "IDR",
     minimumFractionDigits: 2,
   });
 
